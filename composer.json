@@ -1,0 +1,10 @@
+{
+    "require" : {
+        "ayeaye/api": "0.10.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AyeAye\\Tutorial\\HelloWorld\\": "01-helloWorld/src/"
+        }
+    }
+}
