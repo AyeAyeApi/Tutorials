@@ -1,8 +1,8 @@
 #!/bin/bash
-if [ -e "server.pid" ]
+if [ -e "task.pid" ]
 then
 	echo Stopping server
-	kill `cat server.pid`
+	kill `cat task.pid`
 	rm task.pid
 	cat error.log
 else
