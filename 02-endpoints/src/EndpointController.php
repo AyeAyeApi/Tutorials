@@ -34,6 +34,7 @@ class EndpointController extends Controller {
 	 * @param $key
 	 * @param $value
 	 * @throws Exception
+     * @return string
 	 */
 	public function postInformationAction($key, $value) {
 		if(!$key || !$value) {
