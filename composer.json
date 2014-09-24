@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "AyeAye\\Tutorial\\HelloWorld\\": "01-helloWorld/src/",
-            "AyeAye\\Tutorial\\Endpoints\\": "02-endpoints/src/"
+            "AyeAye\\Tutorial\\Endpoints\\": "02-endpoints/src/",
+            "AyeAye\\Tutorial\\Controllers\\": "03-controllers/src/"
         }
     }
 }
