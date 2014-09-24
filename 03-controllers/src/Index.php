@@ -12,8 +12,8 @@ use AyeAye\Api\Controller;
 
 class Index extends Controller {
 
-	public $controllers = [
-        'user' => 'User'
+	public $children = [
+        'user' => '\AyeAye\Tutorial\Controllers\User'
     ];
 
 } 

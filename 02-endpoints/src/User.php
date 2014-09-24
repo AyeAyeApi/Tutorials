@@ -5,7 +5,7 @@
  * @copyright Daniel Mason, 2013
  */
 
-namespace AyeAye\Tutorial\Controllers;
+namespace AyeAye\Tutorial\Endpoints;
 
 
 use AyeAye\Api\Controller;

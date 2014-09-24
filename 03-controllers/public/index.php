@@ -10,7 +10,7 @@ require_once '../../vendor/autoload.php';
 use \AyeAye\Api\Api;
 use \AyeAye\Tutorial\HelloWorld\HelloWorldController;
 
-$api = new Api(new \AyeAye\Tutorial\Endpoints\EndpointController());
+$api = new Api(new \AyeAye\Tutorial\Controllers\Index());
 $api->go()->respond();
 
 // This line makes curl a little easier to deal with

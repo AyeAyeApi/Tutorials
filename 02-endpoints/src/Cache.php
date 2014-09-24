@@ -30,10 +30,10 @@ class Cache
     public function __construct($file)
     {
         $this->cacheFile = $file;
-        if (!is_file($file)) {
-            $this->saveCache();
+        var_dump(is_file($file)); die;
+        if(is_file($file)) {
+            $this->data = json_decode(file_get_contents($file), true);
         }
-        $this->data = json_decode(file_get_contents($file), true);
     }
 
     /**

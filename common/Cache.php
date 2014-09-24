@@ -5,7 +5,7 @@
  * @copyright Daniel Mason, 2014
  */
 
-namespace AyeAye\Tutorial\Endpoints;
+namespace AyeAye\Tutorial;
 
 
 class Cache
@@ -30,10 +30,9 @@ class Cache
     public function __construct($file)
     {
         $this->cacheFile = $file;
-        if (!is_file($file)) {
-            $this->saveCache();
+        if(is_file($file)) {
+            $this->data = json_decode(file_get_contents($file), true);
         }
-        $this->data = json_decode(file_get_contents($file), true);
     }
 
     /**
