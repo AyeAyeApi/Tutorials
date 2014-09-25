@@ -13,7 +13,8 @@ use AyeAye\Api\Controller;
 class Index extends Controller {
 
 	public $children = [
-        'user' => '\AyeAye\Tutorial\Controllers\User'
+        'users' => '\AyeAye\Tutorial\Controllers\User',
+        'content' => '\AyeAye\Tutorial\Controllers\Content',
     ];
 
 } 
